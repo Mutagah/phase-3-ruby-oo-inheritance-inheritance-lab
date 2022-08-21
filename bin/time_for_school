@@ -3,6 +3,12 @@
 require_relative "../lib/user"
 require_relative "../lib/teacher"
 require_relative "../lib/student"
+# require "pry"
+
+jim = User.new
+jim.first_name = "Jim"
+jim.last_name = "Mwangi"
+
 
 steve = Student.new
 steve.first_name = "Steve"
@@ -18,3 +24,4 @@ some_knowledge = avi.teach
 steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+# binding.pry
